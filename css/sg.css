@@ -131,6 +131,8 @@ header {
 
 .prelim p { font-size: 34.5px; }
 
+footer p { font-size: 14.22px; }
+
 /* Design/Layout...
 ================*/
 * {margin: 0; padding: 0;}
@@ -156,3 +158,5 @@ header { background: white; }
   margin: 0;
   padding: 0;
 }
+
+footer { padding-bottom: 46px; }
