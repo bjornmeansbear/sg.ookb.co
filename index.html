@@ -119,11 +119,14 @@
   </footer>
 
     <!-- JS SCRIPTS LIVE DOWN HERE -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   
     <script>
-    $(document).ready(function() {
-      $('html,body').animate({scrollTop:$("section.present").offset().top}, 700);
-      });
+  // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
+  $(".scroll").click(function(event){    
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+  });
     </script>
 
   
