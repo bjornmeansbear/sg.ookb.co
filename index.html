@@ -37,7 +37,9 @@
 
   <header>
     <div class="container">
-      <figure id="logo"><img src="i/sglogo.png" /></figure>
+      <figure id="logo">
+        <a href="#"><img src="i/sglogo.png" /></a>
+      </figure>
       <h1>Startup and Go</h1>
     </div>
   </header>
@@ -116,20 +118,15 @@
     <p class="fullwidth column">&copy; 2013 Startup and Go / built with SuperSimple by Sundays Energy / design by OOKB / started by Ben Ransom</p>
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+    <!-- JS SCRIPTS LIVE DOWN HERE -->
+  
+    <script>
+    $(document).ready(function() {
+      $('html,body').animate({scrollTop:$("section.present").offset().top}, 700);
+      });
+    </script>
 
-  <!-- scripts concatenated and minified via ant build script-->
-<!--
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
--->
-  <!-- end scripts-->
-
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix("img, .png_bg");</script>
-  <![endif]-->
+  
 
 </body>
 </html>
